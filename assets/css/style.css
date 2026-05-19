@@ -34,7 +34,7 @@ h3 {
     margin-bottom: auto;
 }
 
-a {
+a:hover {
     text-decoration: none;
     --primary-color:#2563eb;
 }
