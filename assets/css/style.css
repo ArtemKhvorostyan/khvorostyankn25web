@@ -95,14 +95,14 @@ a:hover {
 .product-card {
   display: flex;
   flex-direction: column;
-  width: calc(25% - 20px); /* 4 картки в ряд */
+  width: calc(25% - 20px);
   min-width: 250px;
   border: 1px solid #eee;
   padding: 15px;
   border-radius: 8px;
 }
 .product-card button {
-  margin-top: auto; /* Штовхає кнопку в самий низ картки */
+  margin-top: auto;
   padding: 10px;
   background-color: #007bff;
   color: white;
