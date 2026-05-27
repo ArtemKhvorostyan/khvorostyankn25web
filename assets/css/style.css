@@ -110,3 +110,8 @@ a:hover {
   border-radius: 4px;
   cursor: pointer;
 }
+
+.main-nav ul {
+    display: flex; gap: 2rem;
+    list-style: none;
+}
