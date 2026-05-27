@@ -7,11 +7,11 @@
 :root {
     --primary-color: #2563eb;
     --primary-hover: #1d4ed8;
-  --accent-color: #f59e0b;
-  --text-dark: #1f2937;
-  --text-light: #6b7280;
-  --bg-color: #f9fafb;
-  --font-main: "Inter", sans-serif;
+    --accent-color: #f59e0b;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --bg-color: #f9fafb;
+    --font-main: "Inter", sans-serif;
 }
 
 body {
@@ -34,7 +34,7 @@ h3 {
     margin-bottom: auto;
 }
 
-a {
+a:hover {
     text-decoration: none;
     --primary-color:#2563eb;
 }
@@ -59,19 +59,54 @@ a {
 }
 
 .hero {
-    height: 60vh; /* 60% висоти екрану */
-   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://unsplash.com/photos/four-sailboats-and-a-speedboat-on-the-water-j6C5qIt-B8w');
-   background-size: cover;
-   background-position: center;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   color: white;
+    height: 60vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://unsplash.com/photos/four-sailboats-and-a-speedboat-on-the-water-j6C5qIt-B8w');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
 }
 
 .hero h1 {
     font-size: 3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: var(--bg-color);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.products-grid {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: calc(25% - 20px);
+  min-width: 250px;
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 8px;
+}
+.product-card button {
+  margin-top: auto;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
