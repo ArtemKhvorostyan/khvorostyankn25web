@@ -175,3 +175,19 @@ fieldset {
     align-items: center;
     gap: 0.5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .main-nav ul {
+    display: none;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  .page-layout {
+    padding: 1rem;
+  }
+}
